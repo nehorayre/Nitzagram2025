@@ -8,19 +8,24 @@ class Post:
     """
     A class used to represent post on Nitzagram
     """
-    def __init__(self): #TODO: add parameters
-        #TODO: write me!
-        pass
+    def __init__(self, username, location, description): #TODO: add parameters
+        self.usdername = username
+        self.location = location
+        self.description = description
+        self.likes_counter = 0
+        self.comments = []
+
+    def add_like(self):
+        self.likes_counter = self.likes_counter + 1
+
+    def us
 
     def display(self):
-        """
-        Display the Post image/Text, description, location, likes and comments
-        on screen
-
-        :return: None
-        """
-        # TODO: write me!
-        pass
+        print()
+        print()
+        print()
+        print()
+        print()
 
 
     def display_comments(self):
