@@ -3,4 +3,4 @@ class Comment:
         self.text = text
 
     def display(self):
-
+        pass
