@@ -4,15 +4,11 @@ import pygame
 
 
 class ImagePost(Post):
-    def __init__(self, username, location, description):
+    def __init__(self, username, location, description, image_path):
         super().__init__(username, location, description)
+        self.image_path = image_path
 
-
-    def image_post(self):
-        img_noa = pygame.image.load(IMAGE_PATH_NOA)
-        img_noa = pygame.transform.scale(img_noa,(POST_WIDTH , POST_HEIGHT))
-        screen.blit(img_noa, (POST_X_POS, POST_Y_POS))
-
-        img_ronaldo = pygame.image.load(IMAGE_PHAT_RONALDO)
-        img_ronaldo = pygame.transform.scale(img_ronaldo, (POST_WIDTH, POST_HEIGHT))
-        screen.blit(img_ronaldo, (POST_X_POS, POST_Y_POS))
+    def post_display(self):
+        img = pygame.image.load(self.image_path)
+        img = pygame.transform.scale(img, (POST_WIDTH, POST_HEIGHT))
+        screen.blit(img, (POST_X_POS, POST_Y_POS))

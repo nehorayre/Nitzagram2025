@@ -18,25 +18,27 @@ class Post:
         self.likes_counter = self.likes_counter + 1
 
 
-    def display(self):
 
+    def username_display(self):
         username_font = pygame.font.SysFont("Arial" ,UI_FONT_SIZE)
         username_display = username_font.render(self.username, True, BLACK)
         screen.blit(username_display, [USER_NAME_X_POS, USER_NAME_Y_POS])
+
+    def likes_display(self):
 
         like_font = pygame.font.SysFont("Arial", LINE_MAX_LENGTH)
         like_display = like_font.render(self.location, True, BLACK)
         screen.blit((like_display, [LIKE_TEXT_X_POS, LIKE_TEXT_Y_POS]))
 
+    def location_display(self):
         location_font = pygame.font.SysFont("Arial" ,UI_FONT_SIZE)
         location_display = location_font.render(self.location, True, BLACK)
         screen.blit((location_display , [LOCATION_TEXT_X_POS, LOCATION_TEXT_Y_POS]))
 
+    def description_display(self):
         description_font = pygame.font.SysFont("Arial", UI_FONT_SIZE)
         description_display = description_font.render(self.description, True, BLACK)
         screen.blit((description_display, [DESCRIPTION_TEXT_X_POS, DESCRIPTION_TEXT_Y_POS]))
-
-        self.display_comments()
 
     def display_comments(self):
         """
