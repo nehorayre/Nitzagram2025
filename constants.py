@@ -3,6 +3,10 @@
 WINDOW_WIDTH = 360
 WINDOW_HEIGHT = 720
 
+#image for post
+
+IMAGE_PATH_NOA = "/Users/nehorayrevah/Desktop/Nitzagram2025/Images/noa_kirel.jpg"
+IMAGE_PATH_RONALDO = "/Users/nehorayrevah/Desktop/Nitzagram2025/Images/ronaldo.jpg"
 # Post proportions
 # X, Y represent the top left corner of the Post
 POST_WIDTH = 0.87 * WINDOW_WIDTH
