@@ -4,9 +4,7 @@ from helpers import screen
 from constants import *
 
 class Post:
-    """
-    A class used to represent post on Nitzagram
-    """
+
     def __init__(self, username, location, description): #TODO: add parameters
         self.username = username
         self.location = location
@@ -65,6 +63,5 @@ class Post:
             position_index += 1
             if i >= NUM_OF_COMMENTS_TO_DISPLAY - 1:
                 break
-
 
 
