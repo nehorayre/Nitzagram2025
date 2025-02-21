@@ -13,7 +13,7 @@ class ImagePost(Post):
             self.image = pygame.transform.scale(self.image, (POST_WIDTH, POST_HEIGHT))
         except pygame.error:
             print(f"Error: Unable to load image {image_path}")
-            self.image = None
+            self.image = Non
 
     def display(self, screen):
         if self.image:
